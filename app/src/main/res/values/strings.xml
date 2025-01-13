@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kursach1.1</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="record_video">Записать видео</string>
+    <string name="open_gallery">Открыть галерею</string>
+    <string name="switch_camera">Переключить камеру</string>
+</resources>

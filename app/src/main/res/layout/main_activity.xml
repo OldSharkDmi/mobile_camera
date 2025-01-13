@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/flashEffect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+    android:background="@android:color/white" />
+
+    <!-- Нижний слой для кнопок -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_gravity="bottom">
+
+        <!-- Кнопка для съёмки фото -->
+        <ImageButton
+            android:id="@+id/photo_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/take_photo"
+            android:padding="8dp"
+            android:src="@drawable/photo_camera"
+            android:layout_marginEnd="16dp" />
+        <!-- Кнопка для записи видео -->
+        <ImageButton
+            android:id="@+id/video_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/record_video"
+            android:padding="8dp"
+            android:src="@drawable/videocam_24dp"
+            android:layout_marginEnd="16dp" />
+        <!-- Кнопка для открытия галереи -->
+        <ImageButton
+            android:id="@+id/gallery_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/open_gallery"
+            android:padding="8dp"
+            android:src="@drawable/photo_library"
+            android:layout_marginEnd="16dp" />
+        <!-- Кнопка для переключения камеры -->
+        <ImageButton
+            android:id="@+id/switch_camera_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/switch_camera"
+            android:padding="8dp"
+            android:src="@drawable/switch_camera" />
+    </LinearLayout>
+</FrameLayout>
